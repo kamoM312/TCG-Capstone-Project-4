@@ -3,6 +3,10 @@
     padding: 0; */
 }
 
+/* header  */
+h2 { 
+    text-align: center
+}
 
 /* flexboxes */
 .flex {
@@ -41,4 +45,24 @@ a {
 /* modals */
 .hidden {
     display: none;
+}
+
+/* menu  */
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu  img {
+    width: 300px;
+    height: 400px;
+}
+
+div.menu > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
