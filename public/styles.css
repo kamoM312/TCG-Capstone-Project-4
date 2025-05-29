@@ -1,0 +1,44 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+
+
+/* flexboxes */
+.flex {
+    display: flex;
+}
+
+/* navbar */
+.nav {
+    width: 1200px;
+
+}
+
+.nav-li {
+    flex-basis: 60%;
+}
+
+ul.flex > li{
+    width: 100%;
+}
+
+.list {
+    list-style: none;
+}
+
+
+
+.logo {
+    flex-basis: 40%;
+}
+
+/* links */
+a {
+    text-decoration: none;
+}
+
+/* modals */
+.hidden {
+    display: none;
+}
