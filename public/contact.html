@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mc Eats</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <!-- navbar -->
     <div>
-        <div>
-            <!-- logo -->
-             <img src="" alt="logo">
-        </div>
+      <div>
+        <!-- logo -->
+        <img src="" alt="logo" />
+      </div>
 
-        <div>
-            <!-- links -->
-            <ul>
-                <li><a href="./index.html">home</a></li>
-                <li><a href="./about.html">about us</a></li>
-                <li><a href="./menu.html">menu</a></li>
-                <li><a href="./booking.html">booking</a></li>
-                <li><a href="./contact.html">contact us</a></li>
-            </ul>
-        </div>
+      <div>
+        <!-- links -->
+        <ul>
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./about.html">about us</a></li>
+          <li><a href="./menu.html">menu</a></li>
+          <li><a href="./booking.html">booking</a></li>
+          <li><a href="./contact.html">contact us</a></li>
+        </ul>
+      </div>
     </div>
-    
+
+    <!-- contact form -->
+    <section>
+      <div>
+        <h2>Contact Us</h2>
+        <p>Please complete the form below:</p>
+      </div>
+
+      <div>
+        <form method="post">
+          <div>
+            <h3>Name</h3>
+            <div>
+              <label for="fname">First name: </label>
+              <input type="text" id="fname" name="fname"/>
+            </div>
+
+            <div>
+              <label for="lname">Last name: </label>
+              <input type="text" id="lname" name="lname"/>
+            </div>
+          </div>
+
+          <h3>Email</h3>
+          <div>
+            <input type="email" name="email" />
+          </div>
+
+          <h3>Subject</h3>
+          <div>
+            <input type="text" name="subject"/>
+          </div>
+
+          <h3>Message</h3>
+          <div>
+            <textarea>
+
+            </textarea>
+          </div>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
