@@ -91,3 +91,7 @@ section#booking > div.flex.flex-vertical > form.flex.flex-vertical > div {
     align-items: center;
     gap: 20px;
 }
+
+section#booking p {
+    margin: 0;
+}
