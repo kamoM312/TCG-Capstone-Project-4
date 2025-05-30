@@ -1,9 +1,11 @@
 const menuItem = document.getElementsByClassName("menu-item");
 console.log(menuItem);
 
+const menuModal = document.querySelector("#menu-modal");
+
 let index = 0;
 
-function currentImage() {
+function currentItem() {
     index = parseInt(this.getAttribute("data-index"));
     // console.log(parseInt(this.getAttribute("data-index")));
     let imageLocation = menuItem[index].children[0].children[0].getAttribute("src");
@@ -18,6 +20,10 @@ function currentImage() {
 
 // make click event work on every gallery item
 for( i = 0; i < menuItem.length; i++) {
-    menuItem[i].addEventListener("click", currentImage);
+    menuItem[i].addEventListener("click", currentItem);
 }
+
+menuModal.addEventListener("click", () => {
+    menuModal.classList.add("hidden");
+})
 
