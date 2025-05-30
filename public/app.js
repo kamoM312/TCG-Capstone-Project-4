@@ -8,11 +8,8 @@ function currentImage() {
     // console.log(parseInt(this.getAttribute("data-index")));
     let imageLocation = menuItem[index].children[0].children[0].getAttribute("src");
     let itemName = menuItem[index].children[1].children[0].innerText;
-    // let itemDescription = menuItem[index].children[1].children[0].innerText;
-    // console.log(itemDescription);
-    // let itemDescription = menuItem[index].children[0].children[0].getAttribute("src");
-    // console.log(imageLocation);
-    // console.log(document.querySelector(""))
+    let itemDescription = menuItem[index].children[3].children[0].innerText;
+    
     document.querySelector("#menu-modal").style.backgroundImage = `url('${imageLocation}')`;
     document.querySelector(".item-name").innerText = itemName;
     document.querySelector(".item-description").innerText = itemDescription;
