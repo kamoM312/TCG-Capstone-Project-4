@@ -80,3 +80,14 @@ form {
 section#contact.flex.flex-vertical > div > form.flex.flex-vertical > div.flex{
     gap: 20px;
 }
+
+section#booking > div.flex.flex-vertical > form.flex.flex-vertical {
+    gap: 20px;
+}
+
+section#booking > div.flex.flex-vertical > form.flex.flex-vertical > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
