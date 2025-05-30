@@ -13,6 +13,11 @@ h2 {
     display: flex;
 }
 
+.flex-vertical {
+    flex-direction: column;
+    align-items: center;
+}
+
 /* navbar */
 .nav {
     width: 1200px;
@@ -65,4 +70,13 @@ div.menu > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* forms  */
+form {
+    width: 800px;
+}
+
+section#contact.flex.flex-vertical > div > form.flex.flex-vertical > div.flex{
+    gap: 20px;
 }
