@@ -120,11 +120,18 @@ section#booking p {
 }
 
 .modal {
-  width: 800px;
+  width: 80vw;
   /* height: 400px; */
   position: relative;
   padding: 20px;
 
   align-items: center;
     justify-content: center;
+}
+
+#menu-modal {
+    background-image: url(./assets/images/beef-wrap-large.jpg);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
