@@ -16,6 +16,18 @@ h2 {
     font-size: 3rem;
 }
 
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #FF4A3B;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1rem;
+  color: #FFCA72;
+}
+
 .header {
   background-image: url("./assets/images/banner.jpg");
   align-items: center;
