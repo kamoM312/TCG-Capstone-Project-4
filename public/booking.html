@@ -119,14 +119,15 @@
                 </div>
 
                 <div class="flex flex-vertical">
-                    <input type="submit" value="Confirm">
+                    <!-- <input type="submit" value="Confirm"> -->
+                    <button onclick="openFinaliseModal()">Confirm</button>
                 </div>
             </div>
         </div>
      </section>
 
     <!-- modal: confirm booking -->
-     <section class="hidden modal-bkg">
+     <section id="confirm-booking" class="hidden modal-bkg">
         <!-- modal container -->
         <div class=" modal-container">
             <!-- booking confirmation card  -->
@@ -136,7 +137,8 @@
                 <p>Your almost there! Click "Confirm" to complete your booking.</p>
 
                 <div>
-                    <input type="submit" value="Confirm">
+                    <!-- <input type="submit" value="Confirm"> -->
+                    <button onclick="finalise()">Confirm</button>
                 </div>
             </div>
 

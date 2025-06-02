@@ -1,8 +1,15 @@
      const form = document.getElementById('info');
+     const detailsModal = document.getElementById("confirmDetailsModal");
+     const finaliseModal = document.getElementById("confirm-booking");
 
-      function confirmDetailsModal(date, time, people, email, phone, comments){
-      const detailsModal = document.getElementById("confirmDetailsModal");
+     let date;
+     let time;
+     let people;
+     let email;
+     let phone;
+     let comments;
 
+      function confirmDetailsModal(){
       detailsModal.querySelector("#date").innerText = date;
       detailsModal.querySelector("#time").innerText = time;
       detailsModal.querySelector("#people").innerText = people;
@@ -13,25 +20,40 @@
       detailsModal.classList.remove("hidden");
      }
 
-     form.addEventListener('submit', function(event) {
-       event.preventDefault();
-       const formData = new FormData(form);
+     function openFinaliseModal(){
+      detailsModal.classList.add("hidden");
+      finaliseModal.classList.remove("hidden");
+     }
 
-       const date = formData.get('date');
-       const time = formData.get('time');
-       const people = formData.get('people');
-       const email = formData.get('email');
-       const phone = formData.get('phone');
-       const comments = formData.get('comments');
-
-       console.log('Date:', date);
+     function finalise(){
+      finaliseModal.classList.add("hidden");
+      console.log('Date:', date);
        console.log('Time:', time);
        console.log('People:', people);
        console.log('Email:', email);
        console.log('Phone:', phone);
        console.log('Comments:', comments);
+     }
 
-       confirmDetailsModal(date, time, people, email, phone, comments);
+     form.addEventListener('submit', function(event) {
+       event.preventDefault();
+       const formData = new FormData(form);
+
+        date = formData.get('date');
+        time = formData.get('time');
+       people = formData.get('people');
+        email = formData.get('email');
+        phone = formData.get('phone');
+        comments = formData.get('comments');
+
+      //  console.log('Date:', date);
+      //  console.log('Time:', time);
+      //  console.log('People:', people);
+      //  console.log('Email:', email);
+      //  console.log('Phone:', phone);
+      //  console.log('Comments:', comments);
+
+       confirmDetailsModal();
      });
 
    
