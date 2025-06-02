@@ -1,6 +1,25 @@
+body {
+  background-color: #9C8172;
+  color: white;
+}
+
 /* header  */
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
 h2 { 
-    text-align: center
+    text-align: center;
+    color: #FFCA72;
+    font-size: 3rem;
+}
+
+.header {
+  background-image: url("./assets/images/banner.jpg");
+  align-items: center;
+  background-size: 100% 100%;
+  min-height: 90vh;
 }
 
 /* flexboxes */
@@ -13,10 +32,19 @@ h2 {
     align-items: center;
 }
 
+.flex-horizontal {
+  flex-direction: row;
+  align-items: center;
+}
+
 /* navbar */
 .nav {
     width: 1200px;
 
+}
+
+.logo {
+  color: #FF4A3B;
 }
 
 .nav-li {
@@ -25,6 +53,7 @@ h2 {
 
 ul.flex > li{
     width: 100%;
+    font-size: 1.5rem;
 }
 
 .list {
@@ -40,6 +69,11 @@ ul.flex > li{
 /* links */
 a {
     text-decoration: none;
+    color: #9C8172;
+}
+
+a:hover, a:active, a:visited {
+  color: #9C8172;
 }
 
 /* modals */
@@ -211,6 +245,5 @@ section#booking p {
 }
 
 #gallery {
-  display: flex;
   background: radial-gradient(black, transparent);
 }
