@@ -36,18 +36,18 @@
           <div>
             <div>
               <label for="date">Date</label>
-              <input type="date" name="date" />
+              <input type="date" name="date" required/>
             </div>
 
             <div>
               <label for="time">Time</label>
-              <input type="time" name="time" />
+              <input type="time" name="time" required/>
             </div>
           </div>
 
           <div>
             <label for="people">People</label>
-          <select id="people" name="people">
+          <select id="people" name="people" required>
             <option value="1">1 person</option>
             <option value="2">2 people</option>
             <option value="3">3 people</option>
@@ -59,19 +59,19 @@
           <div>
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" />
+              <input type="email" name="email" required/>
             </div>
 
             <div>
               <label for="phone">Phone number</label>
-              <input type="tel" name="phone" />
+              <input type="tel" name="phone" required/>
             </div>
           </div>
 
           <p>Comments</p>
           <div>
              <!-- <label for="comments">Comments</label> -->
-          <textarea name="comments" rows="10" cols="30"> </textarea>
+          <textarea name="comments" rows="10" cols="30" maxlength="250"> </textarea>
           </div>
 
           <input type="submit" value="Submit">
