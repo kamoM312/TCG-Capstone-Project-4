@@ -33,6 +33,13 @@
        console.log('Email:', email);
        console.log('Phone:', phone);
        console.log('Comments:', comments);
+      form.reset();
+      date = null;
+      time = null;
+      people = null;
+      email = null;
+      phone = null;
+      comments = null;
      }
 
      form.addEventListener('submit', function(event) {
