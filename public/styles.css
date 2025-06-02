@@ -1,6 +1,7 @@
 body {
   background-color: #9C8172;
   color: white;
+  font-size: 1rem;
 }
 
 /* header  */
@@ -72,13 +73,32 @@ a {
     color: #9C8172;
 }
 
-a:hover, a:active, a:visited {
-  color: #9C8172;
+a:hover, a:active {
+  color: #FFCA72;
 }
 
 /* modals */
 .hidden {
     display: none !important;
+}
+
+/* about */
+#about > div.flex {
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-img {
+  flex-basis: 30%;
+}
+
+.about-img img {
+  height: 600px;
+}
+
+div.about-txt {
+  flex-basis: 70%;
 }
 
 /* menu  */
@@ -246,4 +266,5 @@ section#booking p {
 
 #gallery {
   background: radial-gradient(black, transparent);
+  margin-top: 50px;
 }
