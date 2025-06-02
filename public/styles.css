@@ -87,6 +87,8 @@ a:hover, a:active {
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about-img {
@@ -97,8 +99,10 @@ a:hover, a:active {
   height: 600px;
 }
 
-div.about-txt {
-  flex-basis: 70%;
+div.about-text {
+  flex-basis: 60%;
+  min-width: 250px;
+  max-width: 800px;
 }
 
 /* menu  */
@@ -119,6 +123,8 @@ div.menu > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #0A0226;
+    width: 300px;
 }
 
 /* forms  */
