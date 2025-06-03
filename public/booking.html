@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    
     <section class="header">
-    <!-- navbar -->
-    <div class="flex flex-horizontal">
+      <!-- navbar -->
+      <div class="flex flex-horizontal">
         <div class="logo">
-            <!-- logo -->
-            <h1 class="logo">Mc Eats</h1> 
+          <!-- logo -->
+          <h1 class="logo">Mc Eats</h1>
         </div>
 
         <div class="nav-li">
-            <!-- links -->
-            <ul class="flex list">
-               <li><a href="./index.html">home</a></li>
-                <li><a href="./about.html">about us</a></li>
-                <li><a href="./menu.html">menu</a></li>
-                <li><a href="./booking.html">booking</a></li>
-                <li><a href="./contact.html">contact us</a></li>
-            </ul>
+          <!-- links -->
+          <ul class="flex list">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./about.html">about us</a></li>
+            <li><a href="./menu.html">menu</a></li>
+            <li><a href="./booking.html">booking</a></li>
+            <li><a href="./contact.html">contact us</a></li>
+          </ul>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
     <!-- reservation section -->
     <section id="booking">
@@ -38,114 +37,155 @@
           <div>
             <div>
               <label for="date">Date</label>
-              <input type="date" name="date" required/>
+              <input type="date" name="date" required />
             </div>
 
             <div>
               <label for="time">Time</label>
-              <input type="time" name="time" required/>
+              <input type="time" name="time" required />
             </div>
           </div>
 
           <div>
             <label for="people">People</label>
-          <select id="people" name="people" required>
-            <option value="1">1 person</option>
-            <option value="2">2 people</option>
-            <option value="3">3 people</option>
-            <option value="4">4 people</option>
-            <option value="5">5 people</option>
-          </select>
-          </div>         
+            <select id="people" name="people" required>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+            </select>
+          </div>
 
           <div>
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" required/>
+              <input type="email" name="email" required />
             </div>
 
             <div>
               <label for="phone">Phone number</label>
-              <input type="tel" name="phone" required/>
+              <input type="tel" name="phone" required />
             </div>
           </div>
 
           <p>Comments</p>
           <div>
-             <!-- <label for="comments">Comments</label> -->
-          <textarea name="comments" rows="10" cols="30" maxlength="250"> </textarea>
+            <!-- <label for="comments">Comments</label> -->
+            <textarea name="comments" rows="10" cols="30" maxlength="250">
+            </textarea>
           </div>
 
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" />
         </form>
       </div>
     </section>
 
     <!-- modal: confirm booking details  -->
-     <section id="confirmDetailsModal" class="hidden modal-bkg">
-        <!-- modal container  -->
-        <div class="modal-container">
-            <!-- details card  -->
-            <div class="modal flex flex-vertical">
+    <section id="confirmDetailsModal" class="hidden modal-bkg">
+      <!-- modal container  -->
+      <div class="modal-container">
+        <!-- details card  -->
+        <div class="modal flex flex-vertical">
+          <h2>Booking Details</h2>
 
-                <h2>Booking Details</h2>
+          <div class="flex flex-vertical">
+            <h3>Date</h3>
+            <p id="date">info</p>
+          </div>
 
-                <div class="flex flex-vertical">
-                    <h3>Date</h3>
-                    <p id="date">info</p>
-                </div>
+          <div class="flex flex-vertical">
+            <h3>Time</h3>
+            <p id="time">info</p>
+          </div>
 
-                <div class="flex flex-vertical">
-                    <h3>Time</h3>
-                    <p id="time">info</p>
-                </div>
+          <div class="flex flex-vertical">
+            <h3>Number of People</h3>
+            <p id="people">Info</p>
+          </div>
 
-                <div class="flex flex-vertical">
-                    <h3>Number of People</h3>
-                    <p id="people">Info</p>
-                </div>
+          <div class="flex flex-vertical">
+            <h3>Email</h3>
+            <p id="email">Info</p>
+          </div>
 
-                <div class="flex flex-vertical">
-                    <h3>Email</h3>
-                    <p id="email">Info</p>
-                </div>
+          <div class="flex flex-vertical">
+            <h3>Phone</h3>
+            <p id="phone">Info</p>
+          </div>
 
-                <div class="flex flex-vertical">
-                    <h3>Phone</h3>
-                    <p id="phone">Info</p>
-                </div>
+          <div class="flex flex-vertical">
+            <h3>Comments</h3>
+            <p id="comments">Info</p>
+          </div>
 
-                <div class="flex flex-vertical">
-                    <h3>Comments</h3>
-                    <p id="comments">Info</p>
-                </div>
-
-                <div class="flex flex-vertical">
-                    <!-- <input type="submit" value="Confirm"> -->
-                    <button onclick="openFinaliseModal()">Confirm</button>
-                </div>
-            </div>
+          <div class="flex flex-vertical">
+            <!-- <input type="submit" value="Confirm"> -->
+            <button onclick="openFinaliseModal()">Confirm</button>
+          </div>
         </div>
-     </section>
+      </div>
+    </section>
 
     <!-- modal: confirm booking -->
-     <section id="confirm-booking" class="hidden modal-bkg">
-        <!-- modal container -->
-        <div class=" modal-container">
-            <!-- booking confirmation card  -->
-            <div class="modal flex flex-vertical">
-                <h2>Finalise your booking</h2>
+    <section id="confirm-booking" class="hidden modal-bkg">
+      <!-- modal container -->
+      <div class="modal-container">
+        <!-- booking confirmation card  -->
+        <div class="modal flex flex-vertical">
+          <h2>Finalise your booking</h2>
 
-                <p>Your almost there! Click "Confirm" to complete your booking.</p>
+          <p>Your almost there! Click "Confirm" to complete your booking.</p>
 
-                <div>
-                    <!-- <input type="submit" value="Confirm"> -->
-                    <button onclick="finalise()">Confirm</button>
-                </div>
-            </div>
-
+          <div>
+            <!-- <input type="submit" value="Confirm"> -->
+            <button onclick="finalise()">Confirm</button>
+          </div>
         </div>
-     </section>
+      </div>
+    </section>
+
+    <section id="booking-info">
+      <h2>Book a Table</h2>
+      <p>
+        Reserve your spot and let us take care of the rest. Whether it’s a
+        dinner for two, a family gathering, or a special celebration, we’re here
+        to make your dining experience unforgettable.
+      </p>
+
+      <h3>📅 Online Reservations</h3>
+      <p>
+        Use our easy booking system to reserve your table in just a few clicks.
+        Choose your date, time, and party size—we’ll take it from there.
+      </p>
+
+      <h3>📞 Phone Reservations</h3>
+      <p>
+        Prefer to book over the phone? Call us at
+        <a href="tel:1234567890">(123) 456-7890</a> and we’ll be happy to assist
+        you.
+      </p>
+
+      <h3>💬 Special Requests</h3>
+      <p>
+        Have dietary needs, accessibility concerns, or celebrating something
+        special? Let us know when booking, and we’ll do our best to accommodate
+        you.
+      </p>
+
+      <h3>🕒 Reservation Hours</h3>
+      <p>
+        Monday – Friday: 11:00 AM – 9:30 PM<br />
+        Saturday – Sunday: 9:00 AM – 10:30 PM
+      </p>
+
+      <p>
+        <em
+          >Walk-ins are welcome, but reservations are recommended—especially on
+          weekends.</em
+        >
+      </p>
+    </section>
 
     <script src="./booking.js"></script>
   </body>
