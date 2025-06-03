@@ -338,9 +338,8 @@ section#booking p {
 }
 
 /* booking */
-section#booking.index{
-  height: 300px;
-
+section#booking.index, section#contact.index{
+  height: 400px;
 }
 
 section#booking.index > div{
@@ -350,5 +349,12 @@ section#booking.index > div{
   width: 100%;
   height: 100%;
 
+  justify-content: space-evenly;
+}
+
+/* contact  */
+section#contact.index > div {
+  width: 100%;
+  height: 100%;
   justify-content: space-evenly;
 }
