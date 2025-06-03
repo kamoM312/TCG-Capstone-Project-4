@@ -146,7 +146,7 @@ div.menu > div {
     width: 300px;
 }
 
-/* forms  */
+/* forms, buttons, input  */
 form {
     width: 800px;
 
@@ -154,7 +154,7 @@ form {
     padding: 50px 50px 35px;
 }
 
-input[type="submit"], button {
+input[type="submit"], button, #booking > div > a, body > section:nth-child(6) > div > a {
   background: #FF4A3B;
     color: white;
     font-size: 1.5rem;
@@ -168,7 +168,7 @@ input[type="submit"], button {
   margin-top: 20px;
 }
 
-input[type="submit"]:hover, button:hover{
+input[type="submit"]:hover, button:hover, #booking > div > a:hover, body > section:nth-child(6) > div > a:hover{
   background: #FFCA72 !important;
   color: black;
 }
@@ -335,4 +335,20 @@ section#booking p {
 #gallery {
   background: radial-gradient(black, transparent);
   margin-top: 50px;
+}
+
+/* booking */
+#booking{
+  height: 300px;
+
+}
+
+section#booking > div{
+  background-image: url("./assets/images/reservation.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+
+  justify-content: space-evenly;
 }
