@@ -52,6 +52,9 @@ form.addEventListener("submit", function (event) {
   email = formData.get("email");
   phone = formData.get("phone");
   comments = formData.get("comments");
-
+  if(comments.trim() == ""){
+    comments = "none";
+  }
+  
   confirmDetailsModal();
 });
