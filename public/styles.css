@@ -151,7 +151,7 @@ form {
     width: 800px;
 
     background: #0A0226;
-    padding: 50px;
+    padding: 50px 50px 35px;
 }
 
 input[type="submit"], button {
@@ -164,15 +164,18 @@ input[type="submit"], button {
     /* margin: 10px; */
 }
 
+#contact > div:nth-child(2) > form > input[type=submit] {
+  margin-top: 20px;
+}
+
 input[type="submit"]:hover, button:hover{
   background: #FFCA72 !important;
   color: black;
 }
 
 section#contact.flex.flex-vertical > div > form.flex.flex-vertical > div.flex{
-    gap: 20px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 section#booking > div.flex.flex-vertical > form.flex.flex-vertical {
