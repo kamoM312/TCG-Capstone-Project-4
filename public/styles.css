@@ -16,6 +16,8 @@ h1 {
 h2 { 
     color: #FFCA72;
     font-size: 3rem;
+
+    margin: 1rem;
 }
 
 h3 {
@@ -147,6 +149,24 @@ div.menu > div {
 /* forms  */
 form {
     width: 800px;
+
+    background: #0A0226;
+    padding: 50px;
+}
+
+input[type="submit"], button {
+  background: #FF4A3B;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    /* margin: 10px; */
+}
+
+input[type="submit"]:hover, button:hover{
+  background: #FFCA72 !important;
+  color: black;
 }
 
 section#contact.flex.flex-vertical > div > form.flex.flex-vertical > div.flex{
@@ -178,7 +198,7 @@ section#booking p {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: grey;
+    background-color: #FF4A3B;
 
     display: flex;
     justify-content: center;
@@ -201,6 +221,12 @@ section#booking p {
 
   align-items: center;
   justify-content: center;
+
+  background: #0A0226;
+}
+
+#confirmDetailsModal > div > div {
+  background: #0A0226;
 }
 
 #menu-modal {
