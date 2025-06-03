@@ -352,9 +352,22 @@ section#booking.index > div{
   justify-content: space-evenly;
 }
 
+section#booking-info h3 {
+  color: #0A0226;
+}
+
+section#booking-info a {
+  color: #0A0226;
+}
+
+section#booking-info a:hover {
+  color: #FFCA72;
+}
+
 /* contact  */
 section#contact.index > div {
   width: 100%;
   height: 100%;
   justify-content: space-evenly;
 }
+
