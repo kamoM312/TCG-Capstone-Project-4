@@ -92,7 +92,11 @@ a {
     color: #9C8172;
 }
 
-a:hover, a:active {
+a:hover {
+  color: #FFCA72;
+}
+
+.active {
   color: #FFCA72;
 }
 
@@ -154,7 +158,8 @@ form {
     padding: 50px 50px 35px;
 }
 
-input[type="submit"], button, #booking > div > a, body > section:nth-child(6) > div > a {
+input[type="submit"], button, #booking > div > a,
+ body > section:nth-child(6) > div > a {
   background: #FF4A3B;
     color: white;
     font-size: 1.5rem;
@@ -168,7 +173,8 @@ input[type="submit"], button, #booking > div > a, body > section:nth-child(6) > 
   margin-top: 20px;
 }
 
-input[type="submit"]:hover, button:hover, #booking > div > a:hover, body > section:nth-child(6) > div > a:hover{
+input[type="submit"]:hover, button:hover,
+ #booking > div > a:hover, body > section:nth-child(6) > div > a:hover{
   background: #FFCA72 !important;
   color: black;
 }
