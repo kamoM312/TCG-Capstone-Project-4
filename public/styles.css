@@ -338,12 +338,12 @@ section#booking p {
 }
 
 /* booking */
-#booking{
+section#booking.index{
   height: 300px;
 
 }
 
-section#booking > div{
+section#booking.index > div{
   background-image: url("./assets/images/reservation.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
