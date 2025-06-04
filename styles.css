@@ -188,14 +188,14 @@ input[type="submit"]:hover, button:hover,
   color: black;
 }
 
-#contact > div > a {
+/* #contact > div > a {
    background: #FF4A3B;
     color: white;
     font-size: 1.5rem;
     border: none;
     padding: 8px 12px;
     border-radius: 10px;
-}
+} */
 
 div.flex.flex-vertical > a {
   margin: 20px 0;
