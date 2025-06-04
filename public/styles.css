@@ -342,9 +342,8 @@ section#booking p {
 
 .mySlides img {
   width: 100%;
-    height: auto;
+    height: 500px;
     max-width: 600px;
-  object-fit: cover;
 }
 
 #gallery {
