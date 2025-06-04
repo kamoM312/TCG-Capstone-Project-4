@@ -154,10 +154,13 @@ div.menu > div {
 
 /* forms, buttons, input  */
 form {
-    width: 800px;
+    max-width: 800px;
+
+    /* width: 95%; */
+    padding: 5%;
 
     background: #0A0226;
-    padding: 50px 50px 35px;
+    /* padding: 50px 50px 35px; */
 }
 
 input[type="submit"], button, #booking > div > a,
@@ -184,6 +187,9 @@ input[type="submit"]:hover, button:hover,
 section#contact.flex.flex-vertical > div > form.flex.flex-vertical > div.flex{
     width: 100%;
     justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 section#booking > div.flex.flex-vertical > form.flex.flex-vertical {
@@ -195,6 +201,11 @@ section#booking > div.flex.flex-vertical > form.flex.flex-vertical > div {
     flex-direction: row;
     align-items: center;
     gap: 20px;
+
+        width: 100%;
+    flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 section#booking p {
