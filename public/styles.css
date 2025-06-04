@@ -225,6 +225,8 @@ section#booking p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow-y: scroll;
 }
 
 .modal-container {
@@ -233,6 +235,8 @@ section#booking p {
   justify-content: center;
   align-items: center; */
   background-color: white;
+
+  margin-top: 60px;
 }
 
 .modal {
@@ -389,11 +393,12 @@ section#contact.index > div {
 /* footer  */
 footer {
   background-color: #0A0226;
-  padding: 40px 20px 0;
+  padding: 40px 20px;
   text-align: center;
-  height: 360px;
+  /* height: 360px; */
 
   margin-top: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .footer-nav ul {
@@ -416,9 +421,6 @@ footer {
   transition: color 0.3s ease;
 }
 
-#footer {
-  height: 400px;
-}
 
 h1.logo {
   margin: 20px;
@@ -434,5 +436,11 @@ h1.logo {
 
   body > section.header > div > div.logo {
     flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer-nav ul{
+    flex-direction: column;
   }
 }
