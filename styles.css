@@ -165,7 +165,8 @@ form {
 
 input[type="submit"], button, #booking > div > a,
  body > section:nth-child(6) > div > a,
- #menu > div.flex.flex-vertical > a {
+ #menu > div.flex.flex-vertical > a,
+ #contact > div > a {
   background: #FF4A3B;
     color: white;
     font-size: 1.5rem;
@@ -181,9 +182,19 @@ input[type="submit"], button, #booking > div > a,
 
 input[type="submit"]:hover, button:hover,
  #booking > div > a:hover, body > section:nth-child(6) > div > a:hover,
- #menu > div.flex.flex-vertical > a:hover {
+ #menu > div.flex.flex-vertical > a:hover,
+ #contact > div > a:hover {
   background: #FFCA72 !important;
   color: black;
+}
+
+#contact > div > a {
+   background: #FF4A3B;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
 
 div.flex.flex-vertical > a {
