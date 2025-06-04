@@ -181,7 +181,7 @@ input[type="submit"], button, #booking > div > a,
 
 input[type="submit"]:hover, button:hover,
  #booking > div > a:hover, body > section:nth-child(6) > div > a:hover,
- #menu > div.flex.flex-vertical > a{
+ #menu > div.flex.flex-vertical > a:hover {
   background: #FFCA72 !important;
   color: black;
 }
