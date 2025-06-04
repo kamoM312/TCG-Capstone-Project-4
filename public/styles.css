@@ -120,6 +120,8 @@ a:hover {
 
 .about-img img {
   height: 600px;
+  width: 100%;
+    min-width: 300px;
 }
 
 div.about-text {
@@ -308,17 +310,8 @@ section#booking p {
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* Fading animation */
@@ -333,8 +326,9 @@ section#booking p {
 }
 
 .mySlides img {
-  width: 600px;
-  height: 500px;
+  width: 100%;
+    height: auto;
+    max-width: 600px;
   object-fit: cover;
 }
 
@@ -344,8 +338,12 @@ section#booking p {
 }
 
 /* booking */
-section#booking.index, section#contact.index{
+section#booking.index{
   height: 400px;
+}
+
+section#contact.index {
+  height: 370px;
 }
 
 section#booking.index > div{
@@ -380,9 +378,11 @@ section#contact.index > div {
 /* footer  */
 footer {
   background-color: #0A0226;
-  padding: 40px 20px;
+  padding: 40px 20px 0;
   text-align: center;
-  height: 400px;
+  height: 360px;
+
+  margin-top: 30px;
 }
 
 .footer-nav ul {
@@ -409,3 +409,19 @@ footer {
   height: 400px;
 }
 
+h1.logo {
+  margin: 20px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 900px) {
+  body > section.header > div > div.nav-li {
+    display: none;
+    flex-basis: 0;
+  }
+
+  body > section.header > div > div.logo {
+    flex-basis: 100%;
+  }
+}
