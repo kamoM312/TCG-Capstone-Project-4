@@ -438,7 +438,7 @@ h1.logo {
   }
 
   #menu-modal {
-    background-size: 70vw 80vh;
+    background-size: 70vw 80vh !important;
   }
 }
 
@@ -448,6 +448,6 @@ h1.logo {
   }
 
   #menu-modal {
-    background-size: 90vw 80vh;
+    background-size: 90vw 80vh !important;
   }
 }
