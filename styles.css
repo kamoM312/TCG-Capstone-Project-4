@@ -2,6 +2,7 @@ body {
   background-color: #9C8172;
   color: white;
   font-size: 1rem;
+  margin: 0;
 }
 
 /* header  */
@@ -42,6 +43,7 @@ h4 {
   min-height: 90vh;
 }
 
+
 /* flexboxes */
 .flex {
     display: flex;
@@ -59,8 +61,13 @@ h4 {
 
 /* navbar */
 .nav {
-    width: 1200px;
-
+    /* width: 1200px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: #0A0226;
 }
 
 .logo {
@@ -98,6 +105,13 @@ a:hover {
 
 .active {
   color: #FFCA72;
+}
+
+.anchor{
+  display: block;
+  height: 131px; /*same height as header*/
+  margin-top: -131px; /*same height as header*/
+  visibility: hidden;
 }
 
 /* modals */
