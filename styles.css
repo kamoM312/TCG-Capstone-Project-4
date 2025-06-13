@@ -229,7 +229,7 @@ section#booking > div.flex.flex-vertical > form.flex.flex-vertical {
 
 section#booking > div.flex.flex-vertical > form.flex.flex-vertical > div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 
@@ -411,6 +411,22 @@ section#booking-info a {
 
 section#booking-info a:hover {
   color: #FFCA72;
+}
+
+.form-items {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-items select {
+  width: 100%;
+}
+
+.form-items input {
+  width: 100%;
 }
 
 /* contact  */
