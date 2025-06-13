@@ -438,7 +438,8 @@ section#contact.index > div {
 
 input[type="email" i], input[type="text" i], textarea, 
 #contact > div:nth-child(2) > form > div:nth-child(6), 
-#contact > div:nth-child(2) > form > div:nth-child(8) {
+#contact > div:nth-child(2) > form > div:nth-child(8),
+#contact > div:nth-child(2) > form > div:nth-child(4) {
   width: 100%;
 }
 
