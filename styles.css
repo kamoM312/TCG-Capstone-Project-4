@@ -436,6 +436,12 @@ section#contact.index > div {
   justify-content: space-evenly;
 }
 
+input[type="email" i], input[type="text" i], textarea, 
+#contact > div:nth-child(2) > form > div:nth-child(6), 
+#contact > div:nth-child(2) > form > div:nth-child(8) {
+  width: 100%;
+}
+
 /* footer  */
 footer {
   background-color: #0A0226;
