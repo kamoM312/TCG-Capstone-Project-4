@@ -2,6 +2,8 @@ const menuItem = document.getElementsByClassName("menu-item");
 
 const menuModal = document.querySelector("#menu-modal");
 
+const closeItem = document.querySelector("#close-item");
+
 let index = 0;
 
 function currentItem() {
@@ -22,7 +24,8 @@ for( i = 0; i < menuItem.length; i++) {
     menuItem[i].addEventListener("click", currentItem);
 }
 
-menuModal.addEventListener("click", () => {
+closeItem.addEventListener("click", () => {
     menuModal.classList.add("hidden");
 })
+
 

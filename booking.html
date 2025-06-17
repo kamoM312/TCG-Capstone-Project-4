@@ -121,9 +121,10 @@
             <p id="comments">Info</p>
           </div>
 
-          <div class="flex flex-vertical">
+          <div class="flex flex-horizontal">
             <!-- <input type="submit" value="Confirm"> -->
-            <button onclick="openFinaliseModal()">Confirm</button>
+            <button class="submit" onclick="openFinaliseModal()">Confirm</button>
+            <button class="cancel" onclick="cancelBooking()">Cancel</button>
           </div>
         </div>
       </div>
@@ -139,9 +140,10 @@
 
           <p>Your almost there! Click "Confirm" to complete your booking.</p>
 
-          <div>
+          <div class="flex flex-horizontal">
             <!-- <input type="submit" value="Confirm"> -->
-            <button onclick="finalise()">Confirm</button>
+            <button class="submit" onclick="finalise()">Confirm</button>
+             <button class="cancel" onclick="cancelBooking()">Cancel</button>
           </div>
         </div>
       </div>

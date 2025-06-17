@@ -25,6 +25,18 @@ function openFinaliseModal() {
   finaliseModal.classList.remove("hidden");
 }
 
+function cancelBooking() {
+  detailsModal.classList.add("hidden");
+  finaliseModal.classList.add("hidden");
+  form.reset();
+  date = null;
+  time = null;
+  people = null;
+  email = null;
+  phone = null;
+  comments = null;
+}
+
 function finalise() {
   finaliseModal.classList.add("hidden");
   console.log("Date:", date);

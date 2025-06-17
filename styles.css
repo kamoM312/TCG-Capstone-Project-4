@@ -190,6 +190,10 @@ input[type="submit"], button, #booking > div > a,
     /* margin: 10px; */
 }
 
+button.submit {
+  background: #9C8172;
+}
+
 #contact > div:nth-child(2) > form > input[type=submit] {
   margin-top: 20px;
 }
@@ -255,7 +259,7 @@ section#booking p {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     overflow-y: scroll;
 }
@@ -288,10 +292,12 @@ section#booking p {
 
 #menu-modal {
     background-image: url(./assets/images/beef-wrap-large.jpg);
-    background-size: 50vw 80vh;
+    background-size: 400px 500px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF4A3B;
+
+    margin-top: 100px;
 }
 
 #menu-modal > div > div {
@@ -301,6 +307,21 @@ section#booking p {
 #menu-modal > div > div > div:nth-child(1) > h4 {
   font-size: 2rem;
   margin: 0;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    position: absolute;
+    /* right: auto; */
+    color: white;
+    font-size: 30px;
+    top: 90px;
+}
+
+
+
+#confirmDetailsModal > div > div > div.flex.flex-horizontal, #confirm-booking > div > div > div {
+  gap: 20px;
 }
 
 .item-description {
@@ -411,6 +432,10 @@ section#booking-info a {
 
 section#booking-info a:hover {
   color: #FFCA72;
+}
+
+#confirm-booking > div {
+  align-self: center;
 }
 
 .form-items {
